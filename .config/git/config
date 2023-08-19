@@ -1,0 +1,19 @@
+[core]
+	autocrlf = input
+	editor = vim
+[color]
+	ui = always
+[commit]
+	gpgsign = true
+[user]
+	email = erancihan@gmail.com
+	name = Cihan Eran
+	signingkey = 
+	gpgsign = true
+[pull]
+	ff = only
+[pager]
+	branch = false
+[init]
+	defaultBranch = master
+
