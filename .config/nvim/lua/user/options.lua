@@ -34,4 +34,4 @@ vim.cmd("set wildignore+=*/node_modules/**")
 vim.api.nvim_create_user_command("RemoveDocBlock", [[%s,/\*\_.\{-}\*/,,g]], {})
 
 vim.g.gitblame_display_virtual_text = 0
-
+vim.g.skip_ts_context_commentstring_module = true

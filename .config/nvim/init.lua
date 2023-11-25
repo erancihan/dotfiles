@@ -1,7 +1,7 @@
 require "user.options"
 require "user.keymaps"
 require "user.plugins"
-require "user.theme"
+-- require "user.theme"
 require "user.autopairs"
 require "user.tree"
 require "user.treesitter"
