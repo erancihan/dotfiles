@@ -67,15 +67,26 @@ return packer.startup(function(use)
     })
 
     -- Fancy icons for filebrowser.
-    use({
-        "kyazdani42/nvim-web-devicons",
+    use {
+        'nvim-tree/nvim-web-devicons',
         config = function()
-            require("nvim-web-devicons").setup({})
+            require("nvim-web-devicons").setup()
         end
-    })
+    }
 
-    -- File browser
-    use("kyazdani42/nvim-tree.lua")
+    -- File Browser
+    use {
+        "nvim-tree/nvim-tree.lua",
+        config = function()
+            require("nvim-tree").setup({
+                view = {
+                    width = 30,
+                    side = "left",
+                }
+            })
+        end
+    }
+
     -- Comment strings for different languages
     use("JoosepAlviste/nvim-ts-context-commentstring")
 
@@ -132,17 +143,13 @@ return packer.startup(function(use)
     -- }
 
     -- Tabs
-    use({
-        "akinsho/bufferline.nvim",
-        tag = "v2.*",
-        requires = "kyazdani42/nvim-web-devicons"
-    })
+    use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
 
     -- Statusline
-    use({
-        "nvim-lualine/lualine.nvim",
-        requires = {"kyazdani42/nvim-web-devicons"}
-    })
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
 
     -- Obey .editorconfig files if exists
     use("editorconfig/editorconfig-vim")
@@ -202,7 +209,7 @@ return packer.startup(function(use)
     -- Trouble
     use({
         "folke/trouble.nvim",
-        requires = "kyazdani42/nvim-web-devicons",
+        requires = "nvim-tree/nvim-web-devicons",
         config = function()
             require("trouble").setup({})
         end

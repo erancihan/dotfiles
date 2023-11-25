@@ -25,6 +25,8 @@ vim.opt.pumheight = 10
 vim.opt.timeoutlen = 1000
 vim.opt.updatetime = 300
 vim.opt.wrap = true
+
+-- set termguicolors to enable highlight groups
 vim.opt.termguicolors = true
 
 vim.cmd([[set iskeyword+=-]])
@@ -35,3 +37,7 @@ vim.api.nvim_create_user_command("RemoveDocBlock", [[%s,/\*\_.\{-}\*/,,g]], {})
 
 vim.g.gitblame_display_virtual_text = 0
 vim.g.skip_ts_context_commentstring_module = true
+
+-- disable netrw at the very start of your init.lua (strongly advised)
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
