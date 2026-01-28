@@ -1,0 +1,263 @@
+{
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "cmake.buildDirectory": "${workspaceFolder}/cmake-build-vscode",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "security.allowedUNCHosts": [
+    "wsl.localhost"
+  ],
+  "editor.wordWrap": "on",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook",
+    "*.db": "sqlite-viewer.option"
+  },
+  "sonarlint.rules": {
+    "python:S1192": {
+      "level": "off"
+    },
+    "java:S1854": {
+      "level": "off"
+    },
+    "php:S103": {
+      "level": "off"
+    },
+    "python:S6553": {
+      "level": "on"
+    },
+    "Web:ItemTagNotWithinContainerTagCheck": {
+      "level": "off"
+    }
+  },
+  "cmake.configureOnOpen": true,
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [
+      80
+    ],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off"
+  },
+  "dart.debugExternalLibraries": false,
+  "dart.debugSdkLibraries": false,
+  "dart.openDevTools": "flutter",
+  "python.showStartPage": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[javascriptreact]": {
+    "editor.tabSize": 2,
+    "files.trimTrailingWhitespace": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "terminal.integrated.fontSize": 10,
+  "editor.minimap.enabled": false,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "remote.SSH.remotePlatform": {
+    "VBox_Karmasim": "linux",
+    "139.162.187.134": "linux",
+    "erancihan.com": "linux",
+    "counterfake": "linux",
+    "ml.counterfake.ai": "linux"
+  },
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "go.toolsManagement.autoUpdate": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "git.autofetch": true,
+  "python.languageServer": "None",
+  "python.defaultInterpreterPath": "D:\\lib\\Python\\Python310\\python.exe",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "sonarlint.ls.javaHome": "D:\\\\lib\\\\java\\\\jdk-20.0.1\\\\bin",
+  "eslint.packageManager": "yarn",
+  "eslint.alwaysShowStatus": true,
+  "go.autocompleteUnimportedPackages": true,
+  "window.restoreWindows": "none",
+  "files.associations": {
+    "*.rss": "xml"
+  },
+  "todohighlight.isEnable": true,
+  "maptz.regionfolder": {
+    "[javascript]": {
+      "foldEnd": "/* #endregion */",
+      "foldEndRegex": "/\\*[\\s]*#endregion",
+      "foldStart": "/* #region [NAME] */",
+      "foldStartRegex": "^[\\s]*/\\*[\\s]*#region[\\s]*(.*)[\\s]*\\*/[\\s]*$",
+      "defaultFoldStartRegex": "^[\\s]*/\\*[\\s]*#region[\\s]*default\\s(.*)[\\s]*\\*/[\\s]*$",
+      "foldDefinitions": [
+        {
+          "foldEndRegex": "\\*+/[\\s]*$",
+          "foldStartRegex": "^[\\s]*/\\*\\*+",
+          "isFoldedByDefault": true
+        }
+      ]
+    }
+  },
+  "githubPullRequests.commentExpandState": "collapseAll",
+  "python.formatting.provider": "black",
+  "redhat.telemetry.enabled": true,
+  "notebook.output.textLineLimit": 50,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "terminal.external.osxExec": "iterm2.app",
+  "psalm.logLevel": "ERROR",
+  "makefile.extensionOutputFolder": "./.vscode/makefile",
+  "makefile.configurationCachePath": ".vscode/makefile/configurationCache.log",
+  "settingsSync.ignoredSettings": [
+    "editor.mouseWheelZoom",
+    "phpsab.executablePathCBF",
+    "phpsab.executablePathCS"
+  ],
+  "editor.inlineSuggest.enabled": true,
+  "editor.unicodeHighlight.nonBasicASCII": false,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": "true",
+    "scminput": false,
+    "yaml": false,
+    "rust": true
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "pylint.importStrategy": "fromEnvironment",
+  "pylint.showNotifications": "onError",
+  "pylint.args": [
+    "--rcfile=\"O:\\Documents\\mapp\\.pylintrc\""
+  ],
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  "phpsab.executablePathCBF": "~/.composer/vendor/bin/phpcbf",
+  "phpsab.executablePathCS": "~/.composer/vendor/bin/phpcs",
+  "phpsab.fixerArguments": [],
+  "gitlens.currentLine.enabled": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.codeLens.enabled": false,
+  "editor.fontSize": 12,
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    },
+    "Developer PowerShell for VS2019": {
+      "path": "${env:windir}\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "args": [
+        "-noe",
+        "-c",
+        "&{Import-Module 'C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/Tools/Microsoft.VisualStudio.DevShell.dll'; Enter-VsDevShell d896c978}"
+      ],
+      "icon": "terminal-powershell"
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "todohighlight.keywords": [
+    {
+      "text": "NOTE:",
+      "color": "#fff",
+      "backgroundColor": "#00bcd4",
+      "overviewRulerColor": "rgba(0,188,212,0.8)"
+    },
+    {
+      "text": "HACK:",
+      "color": "#fff",
+      "backgroundColor": "#ff9800",
+      "overviewRulerColor": "rgba(255,152,0,0.8)"
+    },
+    {
+      "text": "IMPLEMENT:",
+      "color": "#fff",
+      "backgroundColor": "#673ab7",
+      "overviewRulerColor": "rgba(103,58,183,0.8)"
+    },
+    {
+      "text": "TODO:",
+      "color": "#fff",
+      "backgroundColor": "#ffbd2a",
+      "overviewRulerColor": "rgba(255,189,42,0.8)"
+    },
+    {
+      "text": "FIXME:",
+      "color": "#fff",
+      "backgroundColor": "#f06292",
+      "overviewRulerColor": "rgba(240,98,146,0.8)"
+    }
+  ],
+  "workbench.activityBar.location": "top",
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "explorer.fileNesting.patterns": {
+    "Cargo.toml": "Cargo.lock",
+    "*.sqlite": "${capture}.${extname}-*",
+    "*.db": "${capture}.${extname}-*",
+    "*.sqlite3": "${capture}.${extname}-*",
+    "*.db3": "${capture}.${extname}-*",
+    "*.sdb": "${capture}.${extname}-*",
+    "*.s3db": "${capture}.${extname}-*"
+  },
+  "prisma.showPrismaDataPlatformNotification": false,
+  "colorize.colorized_colors": [
+    "HEXA",
+    "RGB",
+    "HSL"
+  ],
+  "colorize.languages": [
+    "css",
+    "sass",
+    "scss",
+    "less",
+    "postcss",
+    "sss",
+    "stylus",
+    "xml",
+    "svg",
+    "vue",
+    "json"
+  ],
+  "remote.autoForwardPortsSource": "hybrid",
+  "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
+  "gitlens.currentLine.pullRequests.enabled": false,
+  "gitlens.currentLine.scrollable": false,
+  "workbench.colorCustomizations": {},
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.guides.bracketPairs": "active"
+}

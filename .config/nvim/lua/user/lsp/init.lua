@@ -5,4 +5,4 @@ end
 vim.lsp.set_log_level("debug")
 require("user.lsp.mason")
 require("user.lsp.handlers").setup()
-require("user.lsp.null-ls")
+require("user.lsp.none-ls")

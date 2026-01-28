@@ -1,17 +1,17 @@
-local null_ls_status_ok, null_ls = pcall(require, "null-ls")
-if not null_ls_status_ok then
+local none_ls_status_ok, none_ls = pcall(require, "null-ls")
+if not none_ls_status_ok then
 	return
 end
 
 local h = require("null-ls.helpers")
 
--- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/formatting
-local formatting = null_ls.builtins.formatting
--- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
-local diagnostics = null_ls.builtins.diagnostics
-local completion = null_ls.builtins.completion
+-- https://github.com/nvimtools/none-ls.nvim/tree/main/lua/null-ls/builtins/formatting
+local formatting = none_ls.builtins.formatting
+-- https://github.com/nvimtools/none-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
+local diagnostics = none_ls.builtins.diagnostics
+local completion = none_ls.builtins.completion
 
-null_ls.setup({
+none_ls.setup({
 	debug = false,
 	on_attach = function(client)
 		require("lsp-format").on_attach(client)
@@ -20,7 +20,8 @@ null_ls.setup({
 		completion.spell,
 		formatting.stylua,
 		formatting.prettier,
-		formatting.eslint,
+		-- formatting.eslint,
+		require("none-ls.formatting.eslint"),
 		formatting.gofmt,
 		formatting.phpcbf.with({
 			generator_opts = {
@@ -37,7 +38,7 @@ null_ls.setup({
 				end,
 			},
 		}),
-		diagnostics.php,
+		require("none-ls-php.diagnostics.php"),
 		diagnostics.phpcs.with({
 			generator_opts = {
 				command = "./vendor/bin/phpcs",
@@ -85,6 +86,7 @@ null_ls.setup({
 				end,
 			},
 		}),
-		diagnostics.eslint,
+		-- diagnostics.eslint,
+		require("none-ls.diagnostics.eslint"),
 	},
 })

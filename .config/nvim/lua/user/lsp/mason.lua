@@ -36,7 +36,12 @@ for _, server in pairs(servers) do
 	if has_custom_opts then
 		opts = vim.tbl_deep_extend("force", opts, server_custom_opts)
 	end
-	lspconfig[server].setup(opts)
+	if vim.lsp.config then
+		vim.lsp.config(server, opts)
+		vim.lsp.enable(server)
+	else
+		lspconfig[server].setup(opts)
+	end
 end
 
 mason.setup({
